@@ -1,0 +1,7 @@
+name: ${project.name}
+version: ${project.version}
+#website: https://www.spigotmc.org/resources/complete-softmute-vanilla-version.14272/
+author: RoboMWM
+main: me.robomwm.${project.name}.${project.name}
+depend: [GriefPrevention]
+loadbefore: [boosCooldowns]
