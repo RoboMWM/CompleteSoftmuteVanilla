@@ -49,7 +49,7 @@ public class CompleteSoftmuteVanilla extends JavaPlugin implements Listener
             unCanceled = false;
     }
 
-    @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGHEST)
+    @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGH)
     void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event)
     {
         if (unCanceled)
