@@ -122,7 +122,7 @@ public class CompleteSoftmuteVanilla extends JavaPlugin implements Listener
         playerData = ds.getPlayerData(sender.getPlayer().getUniqueId());
         if (playerData.ignoredPlayers.containsKey(target.getUniqueId()))
         {
-            if (playerData.ignoredPlayers.get(target.getUniqueId()) == gp.IgnoreMode.AdminIgnore)
+            if (playerData.ignoredPlayers.get(target.getUniqueId()))
                 return 1; //players administratively ignored
             return 2; //sender ignoring target
         }
