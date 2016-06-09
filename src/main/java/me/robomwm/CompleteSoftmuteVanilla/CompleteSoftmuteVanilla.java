@@ -52,7 +52,7 @@ public class CompleteSoftmuteVanilla extends JavaPlugin implements Listener
     @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGH)
     void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event)
     {
-        if (unCanceled)
+        if (!unCanceled)
             return; //Everything we check for is what GP cancels - if we didn't uncancel, we have no business to do here
 
         event.setCancelled(true); //reset cancel status to true (after all we did uncancel)
